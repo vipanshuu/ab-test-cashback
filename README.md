@@ -1,14 +1,23 @@
-# A/B Testing Analysis — Cashback Offer (Fintech)
+# A/B Testing Analysis – Cashback Offer
 
-Summary
-Analyzed a simulated A/B experiment comparing two cashback variants:
-- Variant A: 5% cashback
-- Variant B: ₹100 cashback for transactions > ₹1000
+This project is a small A/B test analysis that I created to practice experiment evaluation using Python.  
+I generated a synthetic dataset with two cashback variants:
 
-Key Results (from the synthetic run)
-- Conversion rate: A = 0.206, B = 0.294
-- Chi-square p-value: 0.000596
-Business recommendation: Roll out Variant B (higher conversion).
+- Variant A: 5% cashback  
+- Variant B: ₹100 cashback (on transactions above ₹1000)
+
+The goal was to compare conversion rates and check if the lift from Variant B is statistically significant.
+
+### Key results from my run
+- Conversion rate (A): 0.206  
+- Conversion rate (B): 0.294  
+- p-value from chi-square test: 0.000596  
+This means Variant B performed better.
+
+---
+
+## Project Structure
+
 
 Files
 data/ab_test_cashback.csv
